@@ -1,7 +1,6 @@
-﻿
-namespace Sistema_Planilla
+﻿namespace Sistema_Planilla.Views.Empleado
 {
-    partial class Form1
+    partial class EmpleadoPerfil
     {
         /// <summary>
         /// Required designer variable.
@@ -32,10 +31,9 @@ namespace Sistema_Planilla
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.Text = "EmpleadoPerfil";
         }
 
         #endregion
     }
 }
-
