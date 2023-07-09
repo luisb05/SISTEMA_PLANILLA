@@ -55,6 +55,7 @@
             // 
             this.ribbon1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.ribbon1.Location = new System.Drawing.Point(0, 0);
+            this.ribbon1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ribbon1.Minimized = false;
             this.ribbon1.Name = "ribbon1";
             // 
@@ -66,7 +67,7 @@
             this.ribbon1.OrbDropDown.Size = new System.Drawing.Size(527, 447);
             this.ribbon1.OrbDropDown.TabIndex = 0;
             this.ribbon1.RibbonTabFont = new System.Drawing.Font("Trebuchet MS", 9F);
-            this.ribbon1.Size = new System.Drawing.Size(990, 150);
+            this.ribbon1.Size = new System.Drawing.Size(1485, 200);
             this.ribbon1.TabIndex = 0;
             this.ribbon1.Tabs.Add(this.ribbonTab1);
             this.ribbon1.Text = "ribbon1";
@@ -84,14 +85,16 @@
             // 
             // MenuPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(990, 588);
+            this.ClientSize = new System.Drawing.Size(1485, 905);
             this.Controls.Add(this.ribbon1);
             this.KeyPreview = true;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "MenuPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MenuPrincipal";
+           
             this.ResumeLayout(false);
 
         }

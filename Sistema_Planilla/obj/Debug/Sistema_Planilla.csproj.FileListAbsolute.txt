@@ -11,3 +11,16 @@ C:\Users\Luis.Barahona\Documents\GitHub\SISTEMA_PLANILLA\Sistema_Planilla\obj\De
 C:\Users\Luis.Barahona\Documents\GitHub\SISTEMA_PLANILLA\Sistema_Planilla\obj\Debug\Sistema_Planilla.csproj.CopyComplete
 C:\Users\Luis.Barahona\Documents\GitHub\SISTEMA_PLANILLA\Sistema_Planilla\obj\Debug\Sistema_Planilla.exe
 C:\Users\Luis.Barahona\Documents\GitHub\SISTEMA_PLANILLA\Sistema_Planilla\obj\Debug\Sistema_Planilla.pdb
+C:\Users\kevin\Source\Repos\SISTEMA_PLANILLA\Sistema_Planilla\obj\Debug\Sistema_Planilla.csproj.AssemblyReference.cache
+C:\Users\kevin\Source\Repos\SISTEMA_PLANILLA\Sistema_Planilla\obj\Debug\Sistema_Planilla.Properties.Resources.resources
+C:\Users\kevin\Source\Repos\SISTEMA_PLANILLA\Sistema_Planilla\obj\Debug\Sistema_Planilla.Views.MenuPrincipal.resources
+C:\Users\kevin\Source\Repos\SISTEMA_PLANILLA\Sistema_Planilla\obj\Debug\Sistema_Planilla.csproj.GenerateResource.cache
+C:\Users\kevin\Source\Repos\SISTEMA_PLANILLA\Sistema_Planilla\obj\Debug\Sistema_Planilla.csproj.CoreCompileInputs.cache
+C:\Users\kevin\Source\Repos\SISTEMA_PLANILLA\Sistema_Planilla\obj\Debug\Sistema_Planilla.exe
+C:\Users\kevin\Source\Repos\SISTEMA_PLANILLA\Sistema_Planilla\obj\Debug\Sistema_Planilla.pdb
+C:\Users\kevin\Source\Repos\SISTEMA_PLANILLA\Sistema_Planilla\bin\Debug\Sistema_Planilla.exe.config
+C:\Users\kevin\Source\Repos\SISTEMA_PLANILLA\Sistema_Planilla\bin\Debug\Sistema_Planilla.exe
+C:\Users\kevin\Source\Repos\SISTEMA_PLANILLA\Sistema_Planilla\bin\Debug\Sistema_Planilla.pdb
+C:\Users\kevin\Source\Repos\SISTEMA_PLANILLA\Sistema_Planilla\bin\Debug\System.Windows.Forms.Ribbon.dll
+C:\Users\kevin\Source\Repos\SISTEMA_PLANILLA\Sistema_Planilla\obj\Debug\Sistema_Planilla.csproj.CopyComplete
+C:\Users\kevin\Source\Repos\SISTEMA_PLANILLA\Sistema_Planilla\obj\Debug\Sistema_Planilla.Views.Asistencia_Cons_Horas.ConseptosVista.resources
