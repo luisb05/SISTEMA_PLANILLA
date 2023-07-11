@@ -118,6 +118,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Views\Asistencia_Cons\AsistenciaVista.resx">
+      <DependentUpon>AsistenciaVista.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Asistencia_Cons\ConseptosVista.resx">
       <DependentUpon>ConseptosVista.cs</DependentUpon>
     </EmbeddedResource>

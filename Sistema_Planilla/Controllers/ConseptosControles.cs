@@ -7,9 +7,7 @@ using System.Data.SqlClient;
 using System.Windows.Forms;
 using System.Data;
 using Sistema_Planilla.Models;
-using System.Data.SqlClient;
-using System.Windows.Forms;
-using System.Data;
+
 
 
 namespace Sistema_Planilla.Controllers
