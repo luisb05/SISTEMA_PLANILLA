@@ -13,8 +13,10 @@ namespace Sistema_Planilla.Models
         public AsistenciaModel() { }
 
         public int Id_emp { get; set; }
+        public DateTime Fecha { get; set; }
         public DateTime FechaHoraEntrada { get; set; }
         public DateTime FechaHoraSalida { get; set; }
+      
 
         public static DataTable GetAsistencia { get; set; }
 

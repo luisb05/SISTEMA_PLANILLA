@@ -21,7 +21,7 @@ namespace Sistema_Planilla.Controllers
                 {
                     Con.Open();
 
-                    string sql = "INSERT INTO [dbo].[Asistencias] (Id_emp, FechaHoraEntrada) select " + Modelo.Id_emp + ", '" + Modelo.FechaHoraEntrada + "'";
+                    string sql = "INSERT INTO [dbo].[Asistencias] (Id_emp, Fecha, FechaHoraEntrada) select " + Modelo.Id_emp + ", '" + Modelo.Fecha + "', '" + Modelo.FechaHoraEntrada + "'";
 
                     using (SqlCommand cmd = new SqlCommand(sql, Con))
                     {
@@ -44,7 +44,7 @@ namespace Sistema_Planilla.Controllers
         }
 
 
-        public bool CrearAsistencia2(AsistenciaModel Modelo)
+        public bool ActualizarAsistencia2(AsistenciaModel Modelo)
         {
             try
             {
@@ -52,7 +52,7 @@ namespace Sistema_Planilla.Controllers
                 {
                     Con.Open();
 
-                    string sql = "INSERT INTO [dbo].[Asistencias] (Id_emp, FechaHoraSalida) select " + Modelo.Id_emp + ", '" + Modelo.FechaHoraSalida + "'";
+                    string sql = "update Asistencias set FechaHoraSalida = '" + Modelo.FechaHoraSalida + "' where Id_emp = " + Modelo.Id_emp + " and Fecha = '" + Modelo.Fecha + "'";
 
                     using (SqlCommand cmd = new SqlCommand(sql, Con))
                     {

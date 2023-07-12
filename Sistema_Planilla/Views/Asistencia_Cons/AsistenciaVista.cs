@@ -28,10 +28,11 @@ namespace Sistema_Planilla.Views.Asistencia_Cons_Horas
 
             DateTime HoraSistema = DateTime.Now;
             TimeSpan HoraActual = HoraSistema.TimeOfDay;
-            TimeSpan Entrada1 = new TimeSpan(21, 20, 00);
-            TimeSpan Entrada2 = new TimeSpan(21, 30, 00);
-            TimeSpan Salida1 = new TimeSpan(20, 12, 00);
-            TimeSpan Salida2 = new TimeSpan(20, 25, 00);
+            TimeSpan Entrada1 = new TimeSpan(21, 10, 00);
+            TimeSpan Entrada2 = new TimeSpan(21, 15, 00);
+            TimeSpan Salida1 = new TimeSpan(21, 18, 00);
+            TimeSpan Salida2 = new TimeSpan(21, 25, 00);
+         
 
 
             if (HoraActual > Entrada1 && HoraActual < Entrada2)
@@ -41,33 +42,39 @@ namespace Sistema_Planilla.Views.Asistencia_Cons_Horas
                 PAMO = new AsistenciaModel();
 
                 PAMO.Id_emp = int.Parse(txtcodigoEmpleado.Text);
+                PAMO.Fecha = DateTime.Parse(lblfecharactual.Text);
                 PAMO.FechaHoraEntrada = DateTime.Now;
 
                 if (new AsistenciaControles().CrearAsistencia(PAMO) == true)
                 {
-                   
 
-                }
-
-                else
+                   MessageBox.Show("Ingresado Correctamente", "Informacion del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                } else
                 {
-                    MessageBox.Show("Error al Insertar Concepto", "Informacion del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Error al Insertar Asistencia", "Informacion del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
 
             }
-            else if (HoraActual > Salida1 && HoraActual < Salida2)
+            else
             {
                 lblmensaje.Text = "Hora no permitida por Recursos Humanos";
+            }
+            
+
+             if (HoraActual > Salida1 && HoraActual < Salida2)
+            {
+                lblmensaje.Text = "Hora permitida por Recursos Humanos";
 
                 PAMO = new AsistenciaModel();
 
                 PAMO.Id_emp = int.Parse(txtcodigoEmpleado.Text);
+                PAMO.Fecha = DateTime.Parse(lblfecharactual.Text);
                 PAMO.FechaHoraSalida = DateTime.Now;
 
-                if (new AsistenciaControles().CrearAsistencia2(PAMO) == true)
+                if (new AsistenciaControles().ActualizarAsistencia2(PAMO) == true)
                 {
-                   
+                    MessageBox.Show("Datos actualizados Corectamente ", "Informacion del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
 
                 else
@@ -75,6 +82,10 @@ namespace Sistema_Planilla.Views.Asistencia_Cons_Horas
                     MessageBox.Show("Error al Insertar Asistencia", "Informacion del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
+            }
+            else
+            {
+                lblmensaje.Text = "Hora no permitida por Recursos Humanos";
             }
 
 
@@ -95,7 +106,7 @@ namespace Sistema_Planilla.Views.Asistencia_Cons_Horas
         private void FechaHora_Tick(object sender, EventArgs e)
         {
             lblfecharactual.Text = DateTime.Now.ToShortDateString();
-            lblhoraactual.Text = DateTime.Now.ToString("hh:mm:ss");
+            lblhoraactual.Text = DateTime.Now.ToShortTimeString();
         }
 
         private void txtcodigoEmpleado_TextChanged(object sender, EventArgs e)
