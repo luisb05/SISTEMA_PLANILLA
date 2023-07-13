@@ -25,3 +25,5 @@ C:\Users\kevin\Source\Repos\SISTEMA_PLANILLA\Sistema_Planilla\bin\Debug\System.W
 C:\Users\kevin\Source\Repos\SISTEMA_PLANILLA\Sistema_Planilla\obj\Debug\Sistema_Planilla.csproj.CopyComplete
 C:\Users\kevin\Source\Repos\SISTEMA_PLANILLA\Sistema_Planilla\obj\Debug\Sistema_Planilla.Views.Asistencia_Cons_Horas.ConseptosVista.resources
 C:\Users\kevin\Source\Repos\SISTEMA_PLANILLA\Sistema_Planilla\obj\Debug\Sistema_Planilla.Views.Asistencia_Cons_Horas.AsistenciaVista.resources
+C:\Users\Luis.Barahona\Documents\GitHub\SISTEMA_PLANILLA\Sistema_Planilla\obj\Debug\Sistema_Planilla.Views.Concepto.ConseptosVista.resources
+C:\Users\Luis.Barahona\Documents\GitHub\SISTEMA_PLANILLA\Sistema_Planilla\obj\Debug\Sistema_Planilla.Views.Asistencia.AsistenciaVista.resources

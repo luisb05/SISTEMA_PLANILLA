@@ -17,7 +17,7 @@ namespace Sistema_Planilla
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Views.Asistencia_Cons_Horas.AsistenciaVista());
+            Application.Run(new MenuPrincipal());
         }
     }
 }

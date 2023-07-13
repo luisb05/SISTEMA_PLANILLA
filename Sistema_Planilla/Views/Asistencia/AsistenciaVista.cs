@@ -11,7 +11,7 @@ using Sistema_Planilla.Models;
 using Sistema_Planilla.Controllers;
 
 
-namespace Sistema_Planilla.Views.Asistencia_Cons_Horas
+namespace Sistema_Planilla.Views.Asistencia
 {
     public partial class AsistenciaVista : Form
     {

@@ -13,6 +13,7 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -25,7 +26,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -78,16 +78,16 @@
     <Compile Include="Models\EmpleadoModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Views\Asistencia_Cons\AsistenciaVista.cs">
+    <Compile Include="Views\Asistencia\AsistenciaVista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Asistencia_Cons\AsistenciaVista.Designer.cs">
+    <Compile Include="Views\Asistencia\AsistenciaVista.Designer.cs">
       <DependentUpon>AsistenciaVista.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Asistencia_Cons\ConseptosVista.cs">
+    <Compile Include="Views\Concepto\ConseptosVista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Asistencia_Cons\ConseptosVista.Designer.cs">
+    <Compile Include="Views\Concepto\ConseptosVista.Designer.cs">
       <DependentUpon>ConseptosVista.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Empleado\EmpleadoListar.cs">
@@ -118,10 +118,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Views\Asistencia_Cons\AsistenciaVista.resx">
+    <EmbeddedResource Include="Views\Asistencia\AsistenciaVista.resx">
       <DependentUpon>AsistenciaVista.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Asistencia_Cons\ConseptosVista.resx">
+    <EmbeddedResource Include="Views\Concepto\ConseptosVista.resx">
       <DependentUpon>ConseptosVista.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\MenuPrincipal.resx">
@@ -144,7 +144,7 @@
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.8">
       <Visible>False</Visible>
-      <ProductName>Microsoft .NET Framework 4.8 %28x86 y x64%29</ProductName>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
     <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
@@ -152,6 +152,36 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\Img\PantallaRol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\Img\Usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\Img\GrupoUsuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\Img\BoucherPago.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\schedule.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employees.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\schedule%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\immigration.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sketch.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

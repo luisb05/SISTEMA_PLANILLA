@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Sistema_Planilla.Views.Asistencia;
+using Sistema_Planilla.Views.Concepto;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +17,18 @@ namespace Sistema_Planilla.Views
         public MenuPrincipal()
         {
             InitializeComponent();
+        }
+
+        private void BtnConcepto_Click(object sender, EventArgs e)
+        {
+            ConseptosVista formArticulos = new ConseptosVista();
+            formArticulos.ShowDialog();
+        }
+
+        private void BtnAsistencia_Click(object sender, EventArgs e)
+        {
+            AsistenciaVista formArticulos = new AsistenciaVista();
+            formArticulos.ShowDialog();
         }
     }
 }
